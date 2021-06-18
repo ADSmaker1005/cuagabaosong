@@ -1,0 +1,162 @@
+.cart__mobile {
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    display: none;
+}
+
+.cart__mobile__button__icon {
+    color: red;
+    font-size: 30px;
+    border-radius: 10%;
+    opacity: 1;
+    transition: 0.4s;
+    position: relative;
+}
+.cart__mobile__count{
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    border: 1px solid;
+    bottom: 0%;
+    right: 0%;
+    font-size: 12px;
+}
+.cart__mobile__button__icon:hover {
+    opacity: 0.7;
+    background-color: var(--main-color);
+    color: black;
+}
+
+.cart__mobile__button__open {
+    position: fixed;
+    right: 3%;
+    top: 5%;
+    display: block;
+    padding: 0 1%;
+    z-index: 1014;
+    cursor: pointer;
+}
+
+.cart__mobile__button__close {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    display: block;
+    line-height: 50px;
+}
+
+.cart__mobile__container {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    right: -300px;
+    transition: 0.4s;
+    background-color: #F8F8F8;
+}
+.cart__mobile__bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    display: none;
+}
+#cart__mobile__button__checkbox {
+    display: none;
+}
+
+#cart__mobile__button__checkbox:checked~nav {
+    right: 0;
+}
+#cart__mobile__button__checkbox:checked ~ .cart__mobile__bg{
+    display: block;
+}
+#cart__mobile__button__checkbox:checked~#cart__mobile__button__open {
+    display: none;
+}
+.cart__mobile__container--header{
+    margin-top: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cart__mobile__container--item{
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 8px;
+}
+.cart__mobile__container--item__img{
+    width: 70px;
+    margin-right: 20px;
+}
+.cart__mobile__container--item__img img{
+    width: 100%;
+    height: 100%;
+}
+.cart__mobile__container--item__info{
+    width: calc(100% - 80px);
+}
+.cart__mobile__container--item__info--price a{position: absolute;right: 10%;color: red;text-decoration: none;border: 1px solid red;width: 14px;height: 15px;text-align: center;line-height: 10px;border-radius: 50px;font-size: 10px;}
+.cart__mobile__container--item__info h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.cart__mobile__container--item__info--price{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+.cart__mobile__container--item__info--price small{
+    color: #9a9a9a;
+    font-size: 16px;
+}
+.cart__mobile__container--item__info--price span{}
+.cart__mobile__container--total{
+    width: calc(100% - 20px);
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+.cart__mobile__container--total h3{
+    text-align: center;
+    color: #555;
+    text-transform: uppercase;
+    margin: 0;
+}
+.cart__mobile__container--total span{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.cart__mobile__container--btn{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    background-color: #9AFF33;
+}

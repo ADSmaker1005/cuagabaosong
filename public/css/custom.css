@@ -1,0 +1,42 @@
+.tag.label.label-info
+{
+    background-color: #038F4A;
+    padding: 3px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    border-right: 1px dashed white;
+    margin-right: 15px;
+    font-size: 10px;
+}
+.tag.label.label-info span{
+    background-color: #038F4A;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    position: absolute;
+    line-height: 17px;
+    right: -16px;
+    height: 19px;
+    top: 0px;
+}
+.tag.label.label-info span:hover{
+    background-color: #1d1d1d;
+}
+.content {
+	width: 100%;
+
+}
+.CodeMirror {
+	height: auto !important;
+	border-radius: 5px;
+}
+.CodeMirror-sizer {
+	padding-bottom: 10px !important;
+}
+.CodeMirror-scroll {
+	min-height: 200px;
+}
